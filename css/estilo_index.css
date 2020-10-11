@@ -6,9 +6,14 @@ body{
 .section_art{
 display: flex;
 flex-wrap: nowrap;
-justify-content:space-around;
-margin-top: 1%;
+
+
+
 border: 1px 1px 1px red;
+}
+
+.cont_cards{
+    display: flex;
 }
 
 .diseño1{
@@ -33,7 +38,8 @@ text-align: center;
 }
 
 .cards_{
-    margin: 10px auto;
+    margin: 10px 0px;
+    width: 100%;
 }
 
 .section_video{
@@ -79,4 +85,35 @@ text-align: center;
 
 .photo{
     width: 100%;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.photo:hover{
+position: absolute;
+z-index: 5;
+width: 120%;
+transition: 1S;
+}
+
+.link_card{
+    color: black;
+    margin-left: .5%;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.cont_spoty{
+    margin: 0 auto;
+    display: flex;
+    /* padding: 0px; */
+    padding-top: 1%;
+}
+
+.list_spoty{
+    width: 100%;
+    /* margin: 0 auto; */
+    margin-left: 11%;
 }

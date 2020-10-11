@@ -11,15 +11,8 @@
 </head>
 <body>
 
-<audio autoplay controls>
 
-    <source src="/media/dragon-ball-z.mp3" type="audio/mpeg">
-</audio>
-
-<!--     <div class="container-fluid">
-        
-    </div> -->
-<div class="container fondo_cabezera">
+<div class="container fondo_cabezera sticky-top">
 <h1>ANIMES</h1>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light diseño1">
@@ -29,43 +22,47 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="opciones nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="opciones nav-link" href="#">Features</a>
-            <a class="opciones nav-link" href="#">Pricing</a>
-            <a class="opciones nav-link" href="#">Disabled</a>
+            <a class="opciones nav-link" href="index.html">INCIO <span class="sr-only">(current)</span></a>
+            <a class="opciones nav-link" href="#tarjetas">ARTICULOS</a>
+            <a class="opciones nav-link" href="#Videos">GALERIA DE VIDEOS</a>
+            <a class="opciones nav-link" href="#Fotos">GALERIA DE FOTOS</a>
           </div>
         </div>
       </nav>
 
     </div>
+<div class="container cont_cards"  id="tarjetas">
+    <div class="col-3 cont_spoty">
+      <iframe class="list_spoty" src="https://open.spotify.com/embed/playlist/49pyJRz6UbVbsFPW4bXyC7" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="container section_art col-9">
 
-    <div class="container section_art">
-
-        <div class="card cards_" style="width: 18rem;">
+       <a href="" class="link_card"> <div class="card cards_">
             <img src="/img/img_02.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </div>
+          </div> </a>
 
-          <div class="card cards_" style="width: 18rem;">
+          <a href="" class="link_card"> <div class="card cards_">
             <img src="/img/img_06.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </div>
+          </div></a>
 
 
-          <div class="card cards_" style="width: 18rem;">
+          <a href="" class="link_card"> <div class="card cards_">
             <img src="/img/img_03.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </div>
+          </div> </a>
 
           </div>
-
-          <h1>OPEN DE ANIMES</h1>
+          
+        </div>
+          <h1 id="Videos">OPEN DE ANIMES</h1>
 <div class="container section_video">
 
     <iframe class="video" src="https://www.youtube.com/embed/CID-sYQNCew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -73,19 +70,20 @@
     <iframe class="video" src="https://www.youtube.com/embed/GotGFk-0-O4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
   </div>
 
-  <h1>OPEN DE ANIMES</h1>
+  <h1 id="Fotos">GALERIA DE FOTOS</h1>
    <div class="galeria_photo container">
-    <div class="col-4"> <img class="photo" src="/img/img_01.jpeg"></div>
-    <div class="col-4"> <img class="photo" src="/img/img_02.jpeg"></div>
-    <div class="col-4"> <img class="photo" src="/img/img_03.jpeg"></div>
+    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_01.jpg"></div>
+    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_02.jpg"></div>
+    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_03.jpg"></div>
    </div>
 
    <div class="galeria_photo container">
-    <div class="col-4"> <img class="photo" src="/img/img_04.jpeg"></div>
-    <div class="col-4"> <img class="photo" src="/img/img_05.jpeg"></div>
-    <div class="col-4"> <img class="photo" src="/img/img_06.jpeg"></div>
+    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_04.jpg"></div>
+    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_05.jpg"></div>
+    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_06.jpg"></div>
    </div>
 
+  
     <footer class="container footer">
         <ul class="list-inline">
             <li class="list-inline-item">Lorem ipsum</li>
