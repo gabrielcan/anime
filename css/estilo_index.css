@@ -1,0 +1,45 @@
+.section_art{
+display: flex;
+flex-wrap: nowrap;
+justify-content:space-around;
+margin-top: 1%;
+}
+
+.diseño1{
+    background-color:#8a1917ad!important;
+}
+.img_index{
+
+    width: 100%;
+}
+
+.fondo_cabezera{
+    background-image: url(/img/Cabezera_01.JPG);
+    background-position: top;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    font-size: 60px;
+text-align: center;
+}
+
+
+.section_video{
+ display: flex;
+   justify-content: center;
+   margin: 10px auto;
+}
+
+.video{
+    width: 90vw;
+    align-content: center;
+    height: 90vh;
+}
+.footer{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color:#e12e657a;
+}
