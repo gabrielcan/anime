@@ -1,8 +1,14 @@
+body{
+    background-image: url(/img/Fondo_section_CARD.jpg);
+    background-position: center;
+}
+
 .section_art{
 display: flex;
 flex-wrap: nowrap;
 justify-content:space-around;
 margin-top: 1%;
+border: 1px 1px 1px red;
 }
 
 .diseño1{
@@ -23,8 +29,12 @@ h1{
     color: white;
     font-size: 60px;
 text-align: center;
+
 }
 
+.cards_{
+    margin: 10px auto;
+}
 
 .section_video{
  display: flex;
@@ -35,11 +45,38 @@ text-align: center;
 .video{
     width: 90vw;
     align-content: center;
-    height: 90vh;
+  margin: auto 10px;
 }
 .footer{
     display: flex;
     align-content: center;
     justify-content: space-around;
-    background-color:#e12e657a;
+    color: seashell;
+}
+
+.opciones{
+
+    padding: .2rem 1rem;
+    color:white !important;
+}
+
+.opciones:hover{
+    background-color:#d985627d;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    transition: 1s;
+
+}
+
+.galeria_photo{
+
+    display:flex;
+    align-content: center;
+    
+
+}
+
+.photo{
+    width: 100%;
 }
