@@ -3,6 +3,8 @@ body{
     background-position: center;
 }
 
+
+
 .section_art{
 display: flex;
 flex-wrap: nowrap;
@@ -27,6 +29,9 @@ border: 1px 1px 1px red;
 .fondo_cabezera{
     background-image: url(/img/Cabezera_01.JPG);
     background-position: top;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
 }
 h1{
     font-family: 'Roboto', sans-serif;
@@ -58,6 +63,7 @@ text-align: center;
     align-content: center;
     justify-content: space-around;
     color: seashell;
+    margin-top: 2%;
 }
 
 .opciones{
@@ -66,14 +72,7 @@ text-align: center;
     color:white !important;
 }
 
-.opciones:hover{
-    background-color:#d985627d;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Shadows Into Light', cursive;
-    transition: 1s;
 
-}
 
 .galeria_photo{
 
@@ -87,14 +86,29 @@ text-align: center;
     width: 100%;
     margin-top: 10px;
     padding: 0px;
+    border-radius: 23px 23px 216px;
 }
 
+@media screen and (min-width: 992px) {
 .photo:hover{
 position: absolute;
 z-index: 5;
 width: 120%;
 transition: 1S;
+border-radius: 0px;
 }
+
+.opciones:hover{
+    background-color:#d985627d;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    transition: 1s;
+
+}
+
+}
+
 
 .link_card{
     color: black;
@@ -117,3 +131,63 @@ a{
     /* margin: 0 auto; */
     margin-left: 11%;
 }
+
+
+@media screen and (max-width: 600px) {
+    .cont_spoty{
+    display:none;
+    }
+    .section_art{
+display: flex;
+flex-direction: column;
+width: 100vw;
+    }
+
+    .fondo_cabezera{
+width: 100vw;
+background-image: url(/img/Cabezera_Mobile.JPG);
+    }
+
+    .diseño1{
+        background-color:#8a1917ad!important;
+        
+    }
+
+    .fondo_cabezera{
+
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .section_video{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between
+    }
+    .video{
+        margin: 1% auto;
+    }
+
+    .galeria_photo{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+    }
+    .photo{
+
+    width: 100%;
+    border-radius: 0px;
+    align-items: center;
+    }
+
+
+    .opciones:hover{
+        background-color:#d985627d;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Shadows Into Light', cursive;
+    }
+
+    }

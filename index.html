@@ -8,11 +8,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>Animes</title>
+    <link rel="icon" href="/img/Icono-Naruto.png">
 </head>
 <body>
 
 
-<div class="container fondo_cabezera sticky-top">
+<div class="container fondo_cabezera">
 <h1>ANIMES</h1>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light diseño1">
@@ -32,37 +33,38 @@
 
     </div>
 <div class="container cont_cards"  id="tarjetas">
-    <div class="col-3 cont_spoty">
+    <div class="col-md-3 cont_spoty">
       <iframe class="list_spoty" src="https://open.spotify.com/embed/playlist/49pyJRz6UbVbsFPW4bXyC7" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
-    <div class="container section_art col-9">
+    <div class="container section_art col-12 col-sm-12 col-md-9">
 
-       <a href="" class="link_card"> <div class="card cards_">
-            <img src="/img/img_02.jpeg" class="card-img-top" alt="...">
+        <div class="card cards_ link_card">
+            <img id="1" src="/img/img_02.jpeg" class="card-img-top" alt="..." onclick="cambio_img('1')">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p id ="1-1" class="card-text">L tiene un misterio que que solo él y su intelecto podran dar con el responsables.</p>
             </div>
-          </div> </a>
+          </div>
 
-          <a href="" class="link_card"> <div class="card cards_">
-            <img src="/img/img_06.jpeg" class="card-img-top" alt="...">
+          <div class="card cards_ link_card">
+            <img id="2" src="/img/img_03.jpeg" class="card-img-top" alt="..." onclick="cambio_img('2')">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p id="2-2" class="card-text">Amor en Dragon Ball Z, la pareja que mas dispareja y adorada entre los fans. Encontraran el equilibrio?.</p>
             </div>
-          </div></a>
+          </div>
 
 
-          <a href="" class="link_card"> <div class="card cards_">
-            <img src="/img/img_03.jpeg" class="card-img-top" alt="...">
+          <div class="card cards_ link_card">
+            <img id="3" src="/img/img_05.jpeg" class="card-img-top" alt="..." onclick="cambio_img('3')">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p id="3-3" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-          </div> </a>
+            
+          </div> 
 
           </div>
           
         </div>
-          <h1 id="Videos">OPEN DE ANIMES</h1>
+          <h1 id="Videos">OPENING DE ANIMES</h1>
 <div class="container section_video">
 
     <iframe class="video" src="https://www.youtube.com/embed/CID-sYQNCew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -72,23 +74,24 @@
 
   <h1 id="Fotos">GALERIA DE FOTOS</h1>
    <div class="galeria_photo container">
-    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_01.jpg"></div>
-    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_02.jpg"></div>
-    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_03.jpg"></div>
+    <div class="col-12 col-sm-4 p-1"> <img class="photo" src="/img/img_gal_01.jpg"></div>
+    <div class="col-12 col-sm-4 p-1"> <img class="photo"  src="/img/img_gal_02.jpg"></div>
+    <div class="col-12 col-sm-4 p-1"> <img class="photo"  src="/img/img_gal_03.jpg"></div>
    </div>
 
    <div class="galeria_photo container">
-    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_04.jpg"></div>
-    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_05.jpg"></div>
-    <div class="col-4 p-1"> <img class="photo" src="/img/img_gal_06.jpg"></div>
+    <div class="col-12 col-sm-4 p-1"> <img class="photo" src="/img/img_gal_04.jpg"></div>
+    <div class="col-12 col-sm-4 p-1"> <img class="photo" src="/img/img_gal_05.jpg"></div>
+    <div class="col-12 col-sm-4 p-1"> <img class="photo" src="/img/img_gal_06.jpg"></div>
    </div>
 
   
     <footer class="container footer">
         <ul class="list-inline">
-            <li class="list-inline-item">Lorem ipsum</li>
-            <li class="list-inline-item">Phasellus iaculis</li>
-            <li class="list-inline-item">Nulla volutpat</li>
+            <li class="list-inline-item">&copy copyright</li>
+        
+            <li class="list-inline-item">Todos los Derechos reservados a:</li>
+            <li class="list-inline-item">Gabriel Cano</li>
           </ul>
     </footer>
 
