@@ -3,31 +3,10 @@ body {
   background-position: center;
 }
 
-.section_art {
-  display: flex;
-  flex-wrap: nowrap;
-
-  border: 1px 1px 1px red;
+a {
+  text-decoration: none;
 }
 
-.cont_cards {
-  display: flex;
-}
-
-.diseño1 {
-  background-color: #8a1917ad !important;
-}
-.img_index {
-  width: 100%;
-}
-
-.fondo_cabezera {
-  background-image: url(/img/Cabezera_01.JPG);
-  background-position: top;
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
 h1 {
   font-family: "Roboto", sans-serif;
   font-family: "Shadows Into Light", cursive;
@@ -36,54 +15,11 @@ h1 {
   text-align: center;
 }
 
-.cards_ {
-  margin: 10px 0px;
-  width: 100%;
-}
-
-.section_video {
-  display: flex;
-  justify-content: center;
-  margin: 10px auto;
-}
-
-.video {
-  width: 90vw;
-  align-content: center;
-  margin: auto 10px;
-}
-.footer {
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  color: seashell;
-  margin-top: 2%;
-}
-
-.opciones {
-  padding: 0.2rem 1rem;
-  color: white !important;
-}
-
-.galeria_photo {
-  display: flex;
-  align-content: center;
-}
-
-.photo {
-  width: 100%;
-  margin-top: 10px;
-  padding: 0px;
-  border-radius: 23px 23px 216px;
-}
-
-@media screen and (min-width: 992px) {
-  .photo:hover {
-    position: absolute;
-    z-index: 5;
-    width: 120%;
-    transition: 1s;
-    border-radius: 0px;
+@media screen and (min-width: 1000px) {
+  /* Elementos del NAV - INICIO */
+  .opciones {
+    padding: 0.2rem 1rem;
+    color: white !important;
   }
 
   .opciones:hover {
@@ -93,37 +29,261 @@ h1 {
     font-family: "Shadows Into Light", cursive;
     transition: 1s;
   }
+
+  .link_form {
+    transition: 0.2s;
+    color: #e2e2e2;
+  }
+  .link_form:hover {
+    background-color: #d985627d;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-family: "Shadows Into Light", cursive;
+    transition: 1s;
+  }
+
+  /* Elementos del NAV - FIN */
+
+  .cont_spoty {
+    margin: 0 auto;
+    display: flex;
+    /* padding: 0px; */
+    padding-top: 1%;
+  }
+
+  .list_spoty {
+    width: 100%;
+    /* margin: 0 auto; */
+    margin-left: 11%;
+  }
+
+  .link_card {
+    color: black;
+  }
+
+  .img_index {
+    width: 100%;
+  }
+
+  .cards_ {
+    margin: 10px 0px;
+    width: 100%;
+  }
+
+  /* Estilos section Videos  INCIO*/
+
+  .section_video {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+  }
+
+  .video {
+    width: 80vw;
+    align-content: center;
+    margin: auto 0px;
+    padding: 0.2%;
+  }
+
+  /* Estilos section Videos  FIN*/
+
+  .galeria_photo {
+    display: flex;
+    align-content: center;
+  }
+
+  .photo:hover {
+    position: absolute;
+    z-index: 5;
+    width: 120%;
+    transition: 1s;
+    border-radius: 0px;
+  }
+
+  .photo {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0px;
+    border-radius: 23px 23px 216px;
+    transition: 1s;
+  }
+
+  .fondo_cabezera {
+    background-image: url(/img/Cabezera_01.JPG);
+    background-position: top;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
+  .footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    color: seashell;
+    margin-top: 2%;
+  }
+
+  .section_art {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px 1px 1px red;
+  }
+
+  .cont_cards {
+    display: flex;
+  }
+
+  .diseño1 {
+    background-color: #8a1917ad !important;
+  }
 }
 
-.link_card {
-  color: black;
-  margin-left: 0.5%;
-}
+@media screen and (max-width: 1000px) {
+  .cont_spoty {
+    display: none;
+  }
 
-a {
-  text-decoration: none;
-}
-.cont_spoty {
-  margin: 0 auto;
-  display: flex;
-  /* padding: 0px; */
-  padding-top: 1%;
-}
+  .link_form {
+    transition: 0.2s;
+    color: #e2e2e2;
+  }
+  .link_form:hover {
+    background-color: #d985627d;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-family: "Shadows Into Light", cursive;
+    transition: 1s;
+  }
 
-.list_spoty {
-  width: 100%;
-  /* margin: 0 auto; */
-  margin-left: 11%;
+  .img_index {
+    width: 100%;
+  }
+
+  .cont_cards {
+    display: flex;
+    padding: 0px;
+  }
+
+  .diseño1 {
+    background-color: #8a1917ad !important;
+  }
+
+  .cards_ {
+    margin: 10px 0px;
+    width: 100%;
+  }
+
+  .photo:hover {
+    position: absolute;
+    z-index: 5;
+    width: 120%;
+    transition: 1s;
+    border-radius: 0px;
+  }
+
+  .galeria_photo {
+    display: flex;
+    align-content: center;
+  }
+
+  .photo {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0px;
+    border-radius: 23px 23px 216px;
+    transition: 1s;
+  }
+
+  .opciones:hover {
+    background-color: #d985627d;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-family: "Shadows Into Light", cursive;
+    transition: 1s;
+  }
+
+  .link_card {
+    color: black;
+    margin-left: 0.5%;
+  }
+  /* Estilos section Videos  INCIO*/
+  .section_video {
+    display: flex;
+    /*  flex-direction: column; */
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .video {
+    width: 100%;
+
+    align-content: center;
+    display: flex;
+    justify-items: center;
+    margin: 0px auto;
+    padding: 0.2%;
+  }
+
+  /* Estilos section Videos  FIN*/
+  .fondo_cabezera {
+    background-image: url(/img/Cabezera_Mobile.JPG);
+    background-position: top;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+
+  .footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    color: seashell;
+    margin-top: 2%;
+  }
+
+  .opciones {
+    padding: 0.2rem 1rem;
+    color: white !important;
+  }
+
+  .section_art {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px 1px 1px red;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .cont_spoty {
     display: none;
   }
+
+  .link_form {
+    transition: 0.2s;
+    color: #e2e2e2;
+  }
+  .link_form:hover {
+    background-color: #d985627d;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-family: "Shadows Into Light", cursive;
+    transition: 1s;
+  }
+
+  .img_index {
+    width: 100%;
+  }
   .section_art {
     display: flex;
     flex-direction: column;
     width: 100vw;
+  }
+
+  .cards_ {
+    margin: 10px 0px;
+    width: 100%;
   }
 
   .fondo_cabezera {
@@ -141,6 +301,21 @@ a {
     padding: 0px;
   }
 
+  .footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    color: seashell;
+    margin-top: 2%;
+  }
+
+  .opciones {
+    padding: 0.2rem 1rem;
+    color: white !important;
+  }
+
+  /* Estilos section Videos  INCIO*/
+
   .section_video {
     display: flex;
     flex-direction: column;
@@ -149,7 +324,7 @@ a {
   .video {
     margin: 1% auto;
   }
-
+  /* Estilos section Videos  FIN*/
   .galeria_photo {
     display: flex;
     flex-direction: column;
@@ -166,5 +341,19 @@ a {
     background-color: #d985627d;
     font-family: "Roboto", sans-serif;
     font-family: "Shadows Into Light", cursive;
+  }
+
+  .section_art {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px 1px 1px red;
+  }
+
+  .cont_cards {
+    display: flex;
+  }
+
+  .diseño1 {
+    background-color: #8a1917ad !important;
   }
 }
