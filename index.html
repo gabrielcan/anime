@@ -1,103 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/estilo_index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/estilo_index.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
     <title>Animes</title>
-    <link rel="icon" href="/img/Icono-Naruto.png">
-</head>
-<body>
+    <link rel="icon" href="/img/Icono-Naruto.png" />
+  </head>
+  <body>
+    <div class="container fondo_cabezera">
+      <h1>ANIMES</h1>
 
-
-<div class="container fondo_cabezera">
-<h1>ANIMES</h1>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light diseño1">
-     
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light diseño1">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="opciones nav-link" href="index.html">INCIO <span class="sr-only">(current)</span></a>
+            <a class="opciones nav-link" href="index.html"
+              >INCIO <span class="sr-only">(current)</span></a
+            >
             <a class="opciones nav-link" href="#tarjetas">ARTICULOS</a>
             <a class="opciones nav-link" href="#Videos">GALERIA DE VIDEOS</a>
             <a class="opciones nav-link" href="#Fotos">GALERIA DE FOTOS</a>
           </div>
         </div>
       </nav>
-
     </div>
-<div class="container cont_cards"  id="tarjetas">
-    <div class="col-md-3 cont_spoty">
-      <iframe class="list_spoty" src="https://open.spotify.com/embed/playlist/49pyJRz6UbVbsFPW4bXyC7" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="container section_art col-12 col-sm-12 col-md-9">
+    <div class="container cont_cards" id="tarjetas">
+      <div class="col-md-3 cont_spoty">
+        <iframe
+          class="list_spoty"
+          src="https://open.spotify.com/embed/playlist/49pyJRz6UbVbsFPW4bXyC7"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+      <div class="container section_art col-12 col-sm-12 col-md-9">
+        <div class="card cards_ link_card">
+          <img
+            id="1"
+            src="/img/img_02.jpeg"
+            class="card-img-top"
+            alt="..."
+            onclick="cambio_img('1')"
+          />
+          <div class="card-body">
+            <p id="1-1" class="card-text">
+              L tiene un misterio que que solo él y su intelecto podran dar con
+              el responsables.
+            </p>
+          </div>
+        </div>
 
         <div class="card cards_ link_card">
-            <img id="1" src="/img/img_02.jpeg" class="card-img-top" alt="..." onclick="cambio_img('1')">
-            <div class="card-body">
-              <p id ="1-1" class="card-text">L tiene un misterio que que solo él y su intelecto podran dar con el responsables.</p>
-            </div>
+          <img
+            id="2"
+            src="/img/img_03.jpeg"
+            class="card-img-top"
+            alt="..."
+            onclick="cambio_img('2')"
+          />
+          <div class="card-body">
+            <p id="2-2" class="card-text">
+              Amor en Dragon Ball Z, la pareja que mas dispareja y adorada entre
+              los fans. Encontraran el equilibrio?.
+            </p>
           </div>
-
-          <div class="card cards_ link_card">
-            <img id="2" src="/img/img_03.jpeg" class="card-img-top" alt="..." onclick="cambio_img('2')">
-            <div class="card-body">
-              <p id="2-2" class="card-text">Amor en Dragon Ball Z, la pareja que mas dispareja y adorada entre los fans. Encontraran el equilibrio?.</p>
-            </div>
-          </div>
-
-
-          <div class="card cards_ link_card">
-            <img id="3" src="/img/img_05.jpeg" class="card-img-top" alt="..." onclick="cambio_img('3')">
-            <div class="card-body">
-              <p id="3-3" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            
-          </div> 
-
-          </div>
-          
         </div>
-          <h1 id="Videos">OPENING DE ANIMES</h1>
-<div class="container section_video">
 
-    <iframe class="video" src="https://www.youtube.com/embed/CID-sYQNCew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe  class="video" src="https://www.youtube.com/embed/F5OJPUXJvHk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe class="video" src="https://www.youtube.com/embed/GotGFk-0-O4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-  </div>
+        <div class="card cards_ link_card">
+          <img
+            id="3"
+            src="/img/img_05.jpeg"
+            class="card-img-top"
+            alt="..."
+            onclick="cambio_img('3')"
+          />
+          <div class="card-body">
+            <p id="3-3" class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 id="Videos">OPENING DE ANIMES</h1>
+    <div class="container section_video">
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/CID-sYQNCew"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/F5OJPUXJvHk"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/GotGFk-0-O4"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
 
-  <h1 id="Fotos">GALERIA DE FOTOS</h1>
-   <div class="galeria_photo container">
-    <div class="col-12 col-sm-4 p-1"> <img class="photo" src="/img/img_gal_01.jpg"></div>
-    <div class="col-12 col-sm-4 p-1"> <img class="photo"  src="/img/img_gal_02.jpg"></div>
-    <div class="col-12 col-sm-4 p-1"> <img class="photo"  src="/img/img_gal_03.jpg"></div>
-   </div>
+    <h1 id="Fotos">GALERIA DE FOTOS</h1>
+    <div class="galeria_photo container">
+      <div class="col-12 col-sm-4 p-1">
+        <img class="photo" src="/img/img_gal_01.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 p-1">
+        <img class="photo" src="/img/img_gal_02.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 p-1">
+        <img class="photo" src="/img/img_gal_03.jpg" />
+      </div>
+    </div>
 
-   <div class="galeria_photo container">
-    <div class="col-12 col-sm-4 p-1"> <img class="photo" src="/img/img_gal_04.jpg"></div>
-    <div class="col-12 col-sm-4 p-1"> <img class="photo" src="/img/img_gal_05.jpg"></div>
-    <div class="col-12 col-sm-4 p-1"> <img class="photo" src="/img/img_gal_06.jpg"></div>
-   </div>
+    <div class="galeria_photo container">
+      <div class="col-12 col-sm-4 p-1">
+        <img class="photo" src="/img/img_gal_04.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 p-1">
+        <img class="photo" src="/img/img_gal_05.jpg" />
+      </div>
+      <div class="col-12 col-sm-4 p-1">
+        <img class="photo" src="/img/img_gal_06.jpg" />
+      </div>
+    </div>
 
-  
     <footer class="container footer">
-        <ul class="list-inline">
-            <li class="list-inline-item">&copy copyright</li>
-        
-            <li class="list-inline-item">Todos los Derechos reservados a:</li>
-            <li class="list-inline-item">Gabriel Cano</li>
-          </ul>
+      <ul class="list-inline">
+        <li class="list-inline-item">&copy copyright</li>
+
+        <li class="list-inline-item">Todos los Derechos reservados a:</li>
+        <li class="list-inline-item">Gabriel Cano</li>
+      </ul>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="/js/java_index.js"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/java_index.js"></script>
+  </body>
 </html>

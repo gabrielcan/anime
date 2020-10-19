@@ -1,193 +1,170 @@
-body{
-    background-image: url(/img/Fondo_section_CARD.jpg);
-    background-position: center;
+body {
+  background-image: url(/img/Fondo_section_CARD.jpg);
+  background-position: center;
 }
 
+.section_art {
+  display: flex;
+  flex-wrap: nowrap;
 
-
-.section_art{
-display: flex;
-flex-wrap: nowrap;
-
-
-
-border: 1px 1px 1px red;
+  border: 1px 1px 1px red;
 }
 
-.cont_cards{
-    display: flex;
+.cont_cards {
+  display: flex;
 }
 
-.diseño1{
-    background-color:#8a1917ad!important;
+.diseño1 {
+  background-color: #8a1917ad !important;
 }
-.img_index{
-
-    width: 100%;
-}
-
-.fondo_cabezera{
-    background-image: url(/img/Cabezera_01.JPG);
-    background-position: top;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}
-h1{
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Shadows Into Light', cursive;
-    color: white;
-    font-size: 60px;
-text-align: center;
-
+.img_index {
+  width: 100%;
 }
 
-.cards_{
-    margin: 10px 0px;
-    width: 100%;
+.fondo_cabezera {
+  background-image: url(/img/Cabezera_01.JPG);
+  background-position: top;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Shadows Into Light", cursive;
+  color: white;
+  font-size: 60px;
+  text-align: center;
 }
 
-.section_video{
- display: flex;
-   justify-content: center;
-   margin: 10px auto;
+.cards_ {
+  margin: 10px 0px;
+  width: 100%;
 }
 
-.video{
-    width: 90vw;
-    align-content: center;
+.section_video {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.video {
+  width: 90vw;
+  align-content: center;
   margin: auto 10px;
 }
-.footer{
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    color: seashell;
-    margin-top: 2%;
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  color: seashell;
+  margin-top: 2%;
 }
 
-.opciones{
-
-    padding: .2rem 1rem;
-    color:white !important;
+.opciones {
+  padding: 0.2rem 1rem;
+  color: white !important;
 }
 
-
-
-.galeria_photo{
-
-    display:flex;
-    align-content: center;
-    
-
+.galeria_photo {
+  display: flex;
+  align-content: center;
 }
 
-.photo{
-    width: 100%;
-    margin-top: 10px;
-    padding: 0px;
-    border-radius: 23px 23px 216px;
+.photo {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0px;
+  border-radius: 23px 23px 216px;
 }
 
 @media screen and (min-width: 992px) {
-.photo:hover{
-position: absolute;
-z-index: 5;
-width: 120%;
-transition: 1S;
-border-radius: 0px;
-}
-
-.opciones:hover{
-    background-color:#d985627d;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Shadows Into Light', cursive;
+  .photo:hover {
+    position: absolute;
+    z-index: 5;
+    width: 120%;
     transition: 1s;
+    border-radius: 0px;
+  }
 
+  .opciones:hover {
+    background-color: #d985627d;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    font-family: "Shadows Into Light", cursive;
+    transition: 1s;
+  }
 }
 
+.link_card {
+  color: black;
+  margin-left: 0.5%;
 }
 
-
-.link_card{
-    color: black;
-    margin-left: .5%;
-    
+a {
+  text-decoration: none;
+}
+.cont_spoty {
+  margin: 0 auto;
+  display: flex;
+  /* padding: 0px; */
+  padding-top: 1%;
 }
 
-a{
-    text-decoration: none;
+.list_spoty {
+  width: 100%;
+  /* margin: 0 auto; */
+  margin-left: 11%;
 }
-.cont_spoty{
-    margin: 0 auto;
-    display: flex;
-    /* padding: 0px; */
-    padding-top: 1%;
-}
-
-.list_spoty{
-    width: 100%;
-    /* margin: 0 auto; */
-    margin-left: 11%;
-}
-
 
 @media screen and (max-width: 600px) {
-    .cont_spoty{
-    display:none;
-    }
-    .section_art{
-display: flex;
-flex-direction: column;
-width: 100vw;
-    }
+  .cont_spoty {
+    display: none;
+  }
+  .section_art {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
 
-    .fondo_cabezera{
-width: 100vw;
-background-image: url(/img/Cabezera_Mobile.JPG);
-    }
+  .fondo_cabezera {
+    width: 100vw;
+    background-image: url(/img/Cabezera_Mobile.JPG);
+  }
 
-    .diseño1{
-        background-color:#8a1917ad!important;
-        
-    }
+  .diseño1 {
+    background-color: #8a1917ad !important;
+  }
 
-    .fondo_cabezera{
+  .fondo_cabezera {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+  }
 
-        width: 100vw;
-        margin: 0px;
-        padding: 0px;
-    }
+  .section_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .video {
+    margin: 1% auto;
+  }
 
-    .section_video{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between
-    }
-    .video{
-        margin: 1% auto;
-    }
-
-    .galeria_photo{
-        display:flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-
-    }
-    .photo{
-
+  .galeria_photo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .photo {
     width: 100%;
     border-radius: 0px;
     align-items: center;
-    }
+  }
 
-
-    .opciones:hover{
-        background-color:#d985627d;
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Shadows Into Light', cursive;
-    }
-
-    }
+  .opciones:hover {
+    background-color: #d985627d;
+    font-family: "Roboto", sans-serif;
+    font-family: "Shadows Into Light", cursive;
+  }
+}
