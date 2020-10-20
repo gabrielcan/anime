@@ -35,3 +35,5 @@ function cambio_img(valor_id) {
     cont3 = 0;
   }
 }
+
+

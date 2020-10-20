@@ -116,7 +116,6 @@ h1 {
     position: sticky;
     top: 0;
     z-index: 1020;
-    
   }
 
   .footer {
@@ -259,105 +258,31 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .cont_spoty {
-    display: none;
-  }
-
-  .link_form {
-    transition: 0.2s;
+  .cont_form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 5%;
     color: #e2e2e2;
+    border: 1px solid white;
+    width: 90%;
   }
-  .link_form:hover {
-    background-color: #d985627d;
-    color: #e2e2e2;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
-    font-family: "Shadows Into Light", cursive;
-    transition: 1s;
-  }
-
-  .img_index {
-    width: 100%;
-  }
-  .section_art {
+.cont_section_login{
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+   justify-content: center;
+    
+}
+  .cont_pie_login {
+    display: flex;
+    justify-content: space-around;
   }
-
-  .cards_ {
-    margin: 10px 0px;
-    width: 100%;
-  }
-
-  .fondo_cabezera {
-    width: 100vw;
-    background-image: url(/img/Cabezera_Mobile.JPG);
-    width: 100vw;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .diseño1 {
-    background-color: #8a1917ad !important;
-    margin-bottom: 5%!important;
-  }
-
- 
 
   .footer {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    color: seashell;
-    margin-top: 2%;
-  }
-
-  .opciones {
-    padding: 0.2rem 1rem;
-    color: white !important;
-  }
-
-  /* Estilos section Videos  INCIO*/
-
-  .section_video {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .video {
-    margin: 1% auto;
-  }
-  /* Estilos section Videos  FIN*/
-  .galeria_photo {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-  }
-  .photo {
-    width: 100%;
-    border-radius: 0px;
-    align-items: center;
-  }
-
-  .opciones:hover {
-    background-color: #d985627d;
-    font-family: "Roboto", sans-serif;
-    font-family: "Shadows Into Light", cursive;
-  }
-
-  .section_art {
-    display: flex;
-    flex-wrap: nowrap;
-    border: 1px 1px 1px red;
-  }
-
-  .cont_cards {
-    display: flex;
-  }
-
-  .diseño1 {
-    background-color: #8a1917ad !important;
+    margin-top: 5%;
+    padding: 2%;
   }
 }
